@@ -5,3 +5,16 @@
 
 # 2 2
 #     4 
+
+def Sum(a,b):
+    if b != 0:
+        a += 1
+        b -= 1
+        return Sum(a,b)
+    else:
+        return a
+
+    
+a = int(input('Enter A: '))
+b = int(input('Enter B: '))
+print(Sum(a,b))
