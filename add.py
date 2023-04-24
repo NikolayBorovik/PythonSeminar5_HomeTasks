@@ -5,3 +5,22 @@
 
 # Требуется найти N-е число Фибоначчи
 
+def Fib(n):
+    if n in [1,2]:
+        return 1
+    return Fib(n-1) + Fib(n-2)
+
+n = int(input('Enter N: '))
+
+# print(Fib(n))
+
+list = [0,1]
+
+for i in range(1,n):
+    list.append(Fib(i))
+# print(list)
+print(max(list))
+
+
+
+
